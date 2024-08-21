@@ -1,8 +1,10 @@
-number = int(input("Enter a number: "))
+idades = [25, 30, 35, 40, 45]
+idades.append(50)
+print(f'soma = {sum(idades)}')
 
-aux = 0
+print(f'media = {float(sum(idades) / len(idades))}')
 
-while aux <= number:
-    if aux % 2 == 0:
-        print(aux)
-    aux+=1
+print(f'idade máxima: {max(idades)}')
+print(f'idade mínima: {min(idades)}')
+
+print(f'lista reordenada: {sorted(idades, reverse=True)}')
